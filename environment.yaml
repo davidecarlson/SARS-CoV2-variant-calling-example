@@ -58,6 +58,7 @@ dependencies:
   - openjdk=11.0.8=hacce0ff_0
   - openssl=1.1.1i=h7f98852_0
   - ossuuid=1.6.2=hf484d3e_1000
+  - parallel=20201122=ha770c72_0
   - pcre=8.44=he1b5a44_0
   - perl=5.26.2=h36c2ea0_1008
   - perl-app-cpanminus=1.7044=pl526_1
