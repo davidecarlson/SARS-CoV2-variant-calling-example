@@ -25,3 +25,5 @@ Execute scripts/download_files.sh to download 100 sets of paired-end Illumina re
 ```
 # read the accesion numbers listed in fastqs/samples.txt and use GNU parallel and fastq-dump to download paired end reads for each sample
 # change the value of the argument provided to "--jobs" to some number equal to or less than the number of cores on your machine
+./scripts/download_files.sh
+```
