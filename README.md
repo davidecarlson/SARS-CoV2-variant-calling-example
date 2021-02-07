@@ -19,3 +19,9 @@ conda env create -f environment.yaml
 
 #### Step 4
 Download the SARS-CoV2 reference genome (Accession NC_045512.2) in fasta format from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta)
+
+#### Step 5
+Execute scripts/download_files.sh to download 100 sets of paired-end Illumina reads from BioProject PRJNA656534
+```
+# read the accesion numbers listed in fastqs/samples.txt and use GNU parallel and fastq-dump to download paired end reads for each sample
+# change the value of the argument provided to "--jobs" to some number equal to or less than the number of cores on your machine
