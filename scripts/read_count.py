@@ -1,13 +1,30 @@
 #!/usr/bin/env python
 
+import argparse
 import glob
 import gzip
 from Bio import SeqIO
 import multiprocessing as mp
 import pandas as pd
 import seaborn as sns
+import statistics  as stats
 import matplotlib.pyplot as plt
 
+parser = argparse.ArgumentParser(description="Get some basic stats about the SARS-CoV2 data set")
+
+parser.add_argument('--threads', type=int, required=False, default=1, help='Number of threads to use. Default is 1', action='store')
+
+args=parser.parse_args()
+
+threads = args.threads
+
+# make function to calculat the size of the reference genome
+
+def genome_size(fasta):
+	for record in SeqIO.parse(fasta, "fasta"):
+		length = len(record.seq)
+		#print(record.id + "\t" + str(len(record.seq)))
+		print("The size of the SARS-CoV2 reference assembly is {0} base pairs".format(length))
 
 # make function to count reads in each fastq
 
@@ -25,15 +42,21 @@ def plot_hist(df, xlab, png):
 	# set style
 	sns.set(rc={'figure.figsize':(12,12)})
 	sns.set_style("white")
-	sns.set_context("paper", font_scale=1.75)
+	sns.set_context("paper", font_scale=1.25)
 	sns.despine()
 	ax1 = sns.displot(df['Read Count'], kde=False)
-	plt.axvline(mean(df['Read Count'], 0, 0.75))
+	plt.axvline(stats.mean(df['Read Count']), 0, 0.75, color = "red", linestyle = '--')
+	plt.xticks(rotation=45)
 	plt.xlabel(xlab)
 	plt.savefig(png, bbox_inches='tight')
+	plt.clf()
+
+# get the genome assembly size
+
+genome_size('assembly/GCF_009858895.2_ASM985889v3_genomic.fna')
 
 # specify directory with fastq files
-readDir = '~/coronavirus_example/fastqs/'
+readDir = 'fastqs/'
 
 fastqs = glob.glob(readDir + '*1.fastq.gz')
 
@@ -53,5 +76,5 @@ read_df = pd.DataFrame(output, columns = ['Sample', 'Read Count'])
 
 # plot the read count histogram
 
-plot_hist(read_df, "Read Count", "~/coronavirus_example/figs/read_count_hist.png")
+plot_hist(read_df, "Read Count", "figs/read_count_hist.png")
 
