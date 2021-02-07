@@ -28,7 +28,7 @@ def plot_hist(df, xlab, png):
 	sns.set_context("paper", font_scale=1.75)
 	sns.despine()
 	ax1 = sns.displot(df['Read Count'], kde=False)
-	plt.axvline(mean(df['Read Count'], 0, 0.75)
+	plt.axvline(mean(df['Read Count'], 0, 0.75))
 	plt.xlabel(xlab)
 	plt.savefig(png, bbox_inches='tight')
 
