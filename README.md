@@ -35,7 +35,9 @@ python scripts/data_stats.py --threads <number of desired threads>
 ```
 If all goes well, the following lines should be printed to the screen:
 ```
-The size of the SARS-CoV2 reference assembly is 29903 base pairs
-The average number of paired end reads per sample is 271432.66 reads.
-The median number of paired end reads per sample is 176628.0 reads.
+SARS-CoV2 assembly size:        29903
+Average reads per sample:       271432.66
+Median reads per sample:        176628.0
+Average read length:    117.49
+Median read length:     136.0
 ```
