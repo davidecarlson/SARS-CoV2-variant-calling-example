@@ -27,3 +27,12 @@ Execute scripts/download_files.sh to download 100 sets of paired-end Illumina re
 # change the value of the argument provided to "--jobs" to some number equal to or less than the number of cores on your machine
 ./scripts/download_files.sh
 ```
+
+#### Step 6
+Execute scripts/data_stats.py to get some basic stats/plots about the reference genome and fastq files:
+```
+python scripts/data_stats.py
+The size of the SARS-CoV2 reference assembly is 29903 base pairs
+The average number of paired end reads per sample is 271432.66 reads.
+The median number of paired end reads per sample is 176628.0 reads.
+```

@@ -74,6 +74,9 @@ output = [p.get() for p in results]
 
 read_df = pd.DataFrame(output, columns = ['Sample', 'Read Count'])
 
+print("The average number of paired end reads per sample is {0} reads.".format(stats.mean(read_df['Read Count'])))
+print("The median number of paired end reads per sample is {0} reads.".format(stats.median(read_df['Read Count'])))
+
 # plot the read count histogram
 
 plot_hist(read_df, "Read Count", "figs/read_count_hist.png")
