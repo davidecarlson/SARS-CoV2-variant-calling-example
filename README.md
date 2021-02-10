@@ -15,12 +15,14 @@ git clone https://github.com/davidecarlson/SARS-CoV2-variant-calling-example.git
 Create a new conda environment with the software needed in this analysis using the provided environment file:
 ```
 conda env create -f environment.yaml
-````
+```
 
 #### Step 4
 Activate the environment:
-```conda activate covid-variant-example
 ```
+conda activate covid-variant-example
+```
+
 
 #### Step 5
 Download the SARS-CoV2 reference genome (Accession NC_045512.2) in fasta format from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2?report=fasta)
