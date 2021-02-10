@@ -64,4 +64,4 @@ Execute scripts/map_reads.py to map the paired-end reads for each sample against
 ```
 python scripts/map_reads.py --threads <number of samples to map in parallel>
 ```
-The output will be an alignment (```*.sorted.markdup.bam```) and alignment index (```*.bai```) file for each sample.
+The output will be an alignment (```bams/*.sorted.markdup.bam```) and alignment index (```bams/*.bai```) file for each sample. Note that contents of ```bams/``` and ```logs/``` are not uploaded to the repository for space reasons.
