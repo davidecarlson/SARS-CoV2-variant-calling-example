@@ -46,3 +46,11 @@ Median reads per sample:        176628.0
 Average read length:    117.49
 Median read length:     136.0
 ```
+
+#### Step 8
+
+Execute scripts/map_reads.py to map the paired-end reads for each sample against the reference genome:
+
+```
+python scripts/map_reads.py --threads <number of samples to map in parallel>
+```
