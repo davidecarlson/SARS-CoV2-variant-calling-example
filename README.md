@@ -49,8 +49,17 @@ Median read length:     136.0
 
 #### Step 8
 
+Index the reference genome:
+
+```
+bwa index assembly/GCF_009858895.2_ASM985889v3_genomic.fna
+```
+
+#### Step 9
+
 Execute scripts/map_reads.py to map the paired-end reads for each sample against the reference genome:
 
 ```
 python scripts/map_reads.py --threads <number of samples to map in parallel>
 ```
+The output will be an alignment (```*.sorted.markdup.bam```) and alignment index (```*.bai```) file for each sample.
