@@ -1,3 +1,5 @@
 fastqs/*.gz
 bams/
 bams/*
+logs/
+logs/*
