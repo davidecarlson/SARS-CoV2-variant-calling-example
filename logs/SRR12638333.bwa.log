@@ -1,114 +1,30 @@
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
-[M::process] read 87964 sequences (10000174 bp)...
-[M::process] read 87970 sequences (10000239 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 39027, 2, 3)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::process] read 824260 sequences (94108027 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (32, 366786, 39, 21)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (155, 339, 3698)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 10784)
+[M::mem_pestat] mean and std.dev: (2097.62, 3194.84)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 14877)
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 130, 192)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 410)
-[M::mem_pestat] mean and std.dev: (144.00, 76.33)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 519)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87964 reads in 3.229 CPU sec, 3.025 real sec
-[M::process] read 87842 sequences (10000143 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 39155, 1, 4)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 129, 191)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 407)
-[M::mem_pestat] mean and std.dev: (143.71, 75.76)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 515)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87970 reads in 3.481 CPU sec, 3.197 real sec
-[M::process] read 87592 sequences (10000048 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 39024, 6, 4)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 130, 192)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 410)
-[M::mem_pestat] mean and std.dev: (144.10, 76.28)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 519)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87842 reads in 3.336 CPU sec, 2.972 real sec
-[M::process] read 87164 sequences (10000083 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 39167, 3, 2)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 129, 192)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 410)
-[M::mem_pestat] mean and std.dev: (144.05, 75.79)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 519)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87592 reads in 3.613 CPU sec, 3.333 real sec
-[M::process] read 87952 sequences (10000069 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 38947, 4, 1)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (84, 131, 192)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 408)
-[M::mem_pestat] mean and std.dev: (144.62, 75.78)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 516)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87164 reads in 3.498 CPU sec, 3.126 real sec
-[M::process] read 87718 sequences (10000056 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (5, 38892, 3, 1)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 130, 193)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 413)
-[M::mem_pestat] mean and std.dev: (144.54, 76.64)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 523)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87952 reads in 3.802 CPU sec, 3.429 real sec
-[M::process] read 87406 sequences (10000267 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 38983, 8, 3)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (83, 130, 192)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 410)
-[M::mem_pestat] mean and std.dev: (144.23, 76.12)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 519)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87718 reads in 3.733 CPU sec, 3.427 real sec
-[M::process] read 87090 sequences (10000113 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (6, 38869, 2, 2)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (84, 130, 194)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 414)
-[M::mem_pestat] mean and std.dev: (145.22, 76.64)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 524)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87406 reads in 3.304 CPU sec, 2.988 real sec
-[M::process] read 35562 sequences (4106835 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (4, 38880, 9, 1)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (84, 131, 195)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 417)
-[M::mem_pestat] mean and std.dev: (145.86, 76.70)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 528)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 87090 reads in 3.335 CPU sec, 3.169 real sec
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 15842, 1, 0)
-[M::mem_pestat] skip orientation FF as there are not enough pairs
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (84, 131, 194)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 414)
-[M::mem_pestat] mean and std.dev: (145.62, 75.46)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 524)
-[M::mem_pestat] skip orientation RF as there are not enough pairs
-[M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 35562 reads in 1.296 CPU sec, 1.184 real sec
+[M::mem_pestat] (25, 50, 75) percentile: (84, 130, 193)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 411)
+[M::mem_pestat] mean and std.dev: (144.53, 76.20)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 520)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (398, 1039, 3144)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 8636)
+[M::mem_pestat] mean and std.dev: (1875.82, 2322.92)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 11382)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (177, 2884, 6299)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 18543)
+[M::mem_pestat] mean and std.dev: (3285.10, 3238.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 24665)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 824260 reads in 35.264 CPU sec, 1.171 real sec
 [main] Version: 0.7.17-r1188
-[main] CMD: bwa mem -R @RG\tID:SRR12638333\tSM:SRR12638333\tLB:lib1\tPL:ILLUMINA -t 1 assembly/GCF_009858895.2_ASM985889v3_genomic.fna fastqs/SRR12638333_1.fastq.gz fastqs/SRR12638333_2.fastq.gz
-[main] Real time: 30.394 sec; CPU: 32.921 sec
+[main] CMD: bwa mem -R @RG\tID:SRR12638333\tSM:SRR12638333\tLB:lib1\tPL:ILLUMINA -t 40 assembly/GCF_009858895.2_ASM985889v3_genomic.fna fastqs/SRR12638333_1.fastq.gz fastqs/SRR12638333_2.fastq.gz
+[main] Real time: 7.624 sec; CPU: 37.765 sec
